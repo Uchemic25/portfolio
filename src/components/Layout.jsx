@@ -68,9 +68,9 @@ const Layout = () => {
             <a
               target={'_blank'}
               rel={'noreferrer'}
-              href="https://www.kingslee.me"
+              href="https://rehkmansa.netlify.app/"
             >
-              <span>kingslee</span>
+              <span>rehkmansa</span>
             </a>
           </p>
         </InspiredWrapper>

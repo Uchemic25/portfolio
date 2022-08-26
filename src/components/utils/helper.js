@@ -1,7 +1,7 @@
 import { format } from 'fecha';
 
 export const fetchRepos = (setRepos) => {
-  fetch('https://api.github.com/users/rehkmansa/repos?sort=pushed')
+  fetch('https://api.github.com/users/uchemic25/repos?sort=pushed')
     .then((res) => res.json())
     .then((data) => {
       const newArr = [];
@@ -13,7 +13,6 @@ export const fetchRepos = (setRepos) => {
           name,
           html_url,
           pushed_at,
-          updated_at,
           description,
           language,
           created_at,

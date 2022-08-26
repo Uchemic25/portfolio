@@ -77,17 +77,17 @@ const LeftSection = () => {
   return (
     <Wrapper>
       <div className="header">
-        <h1>Rehk Mansa</h1>
-        <h4>Freelance Frontend Developer</h4>
+        <h1>Uche Michael</h1>
+        <h4>Mobile app developer</h4>
         <MobileMenu />
       </div>
       <div className="description">
         <p>
-          Hello, I'm <span>Rehk</span>, a frontend developer. I love
-          <span> problem solving</span> and critical thinking, I live for the
-          challenge, I use coding as a tool to
-          <span> solve problems</span>. I am currently interested in
-          <span> building interactive</span> UI's for game development.
+          I develop <span> mobile applications </span> for both android and iOS
+          devices. I have <span>4 years experience</span> in Java Programming
+          and it's application for developing android Apps. I am also very{' '}
+          <span>knowledgeable</span> in the using of <span>Flutter</span> for
+          the development of cross platform apps
         </p>
         <Navigation className="f-c ac-s">
           <NavItem name="Projects" link="/" number={'00'} />
@@ -96,7 +96,7 @@ const LeftSection = () => {
         </Navigation>
         <SocialsWrapper className="flex-20 ai-c ">
           <Icon
-            link={'https://github.com/RehkMansa'}
+            link={'https://github.com/uchemic25'}
             iconClass="fab fa-github"
             name="GitHub"
           />

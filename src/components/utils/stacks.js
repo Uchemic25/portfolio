@@ -1,27 +1,32 @@
 export const stacks = [
   {
-    name: 'React JS',
-    icon: 'react',
+    name: 'Flutter',
+    icon: 'android',
   },
   {
-    name: 'CSS',
-    icon: 'css3-alt',
+    name: 'Java',
+    icon: 'java',
+  },
+  {
+    name: 'Kotlin',
+    icon: 'korvue',
+  },
+  {
+    name: 'PHP',
+    icon: 'php',
   },
   {
     name: 'GIT',
     icon: 'git-alt',
   },
+
   {
-    name: 'Firebase',
-    icon: 'gripfire',
+    name: 'CSS',
+    icon: 'css3-alt',
   },
   {
     name: 'HTML',
     icon: 'html5',
-  },
-  {
-    name: 'JavaScript',
-    icon: 'js',
   },
 ];
 

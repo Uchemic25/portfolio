@@ -1,7 +1,6 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import styled from 'styled-components';
 import ProjectsCard from './ProjectsCard';
-import LiveProjects from './LiveProjects';
 import { fetchRepos } from './utils/helper';
 
 const Wrapper = styled.div`
@@ -98,44 +97,22 @@ const Home = ({ repos, setRepos }) => {
   useEffect(() => {
     loader();
   }, []);
-
-  const [currentTab, setCurrentTab] = useState(0);
   return (
     <Wrapper>
       {repos.length >= 1 ? (
         <div className="wrapper">
-          {currentTab === 0 ? (
-            <>
-              <HeaderTab
-                title="Github"
-                text="Live Projects"
-                onClickFunc={() => setCurrentTab(1)}
+          <HeaderTab title="Github" />
+          <ProjectWrapper className="flex f-c flex-center">
+            {repos.map((repo) => (
+              <ProjectsCard
+                name={repo.name}
+                date={repo.date}
+                language={repo.language}
+                link={repo.url}
+                key={repo.id}
               />
-              <ProjectWrapper className="flex f-c flex-center">
-                {repos.map((repo) => (
-                  <ProjectsCard
-                    name={repo.name}
-                    date={repo.date}
-                    language={repo.language}
-                    link={repo.url}
-                    key={repo.id}
-                  />
-                ))}
-              </ProjectWrapper>
-            </>
-          ) : (
-            <>
-              <HeaderTab
-                title="Live Projects"
-                text="Back to Github"
-                prev={true}
-                onClickFunc={() => setCurrentTab(0)}
-              />
-              <ProjectWrapper className="flex f-c flex-center">
-                <LiveProjects />
-              </ProjectWrapper>
-            </>
-          )}
+            ))}
+          </ProjectWrapper>
         </div>
       ) : (
         <div className="loader">
@@ -154,18 +131,8 @@ const HeaderTab = (props) => {
   return (
     <div className="header flex">
       <div className="flex title">
-        <i
-          className={`fa-solid ${props.prev ? 'fa-laptop-code' : 'fa-code'}`}
-        ></i>
+        <i className="fa-solid fa-code" />
         <h2>{props.title}</h2>
-      </div>
-      <div onClick={props.onClickFunc} className="flex ai-c navigation">
-        <p>{props.text}</p>
-        <i
-          className={`fa-solid ${
-            props.prev ? 'fa-arrow-left' : 'fa-arrow-right'
-          }`}
-        ></i>
       </div>
     </div>
   );
