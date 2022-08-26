@@ -80,7 +80,7 @@ const MobileMenu = () => {
         <WrapperOverlay>
           <Wrapper className="f-c ai-c">
             <WrapperHeader className="flex-20 jc-sb ai-c">
-              <h3>rehkmansa</h3>
+              <h3>UcheMic</h3>
               <div className="btn-toggle" onClick={() => setToggler(!toggler)}>
                 <i className="fa-solid fa-xmark"></i>
               </div>
