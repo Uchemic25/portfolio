@@ -101,12 +101,7 @@ const LeftSection = () => {
             name="GitHub"
           />
           <Icon
-            link={'https://www.linkedin.com/in/godspower-nathaniel-768355212/'}
-            iconClass="fab fa-linkedin"
-            name="Linkedin"
-          />
-          <Icon
-            link={'mailto:godspowernathaniel25@gmail.com'}
+            link={'mailto:egegeuche25@gmail.com'}
             iconClass="fa-solid fa-at"
             name="Email"
           />
